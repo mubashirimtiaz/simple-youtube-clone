@@ -10,13 +10,16 @@ const VideoItem = ({ video, setSelectedVideo }) => {
     >
       <div className="d-flex">
         <img
+          style={{ cursor: "pointer" }}
           src={snippet.thumbnails.medium.url}
           alt={snippet.description}
           className="img-fluid"
         />
       </div>
       <div className="media-body ml-2">
-        <h5 className="font-weight-bold">{snippet.title}</h5>
+        <h5 className="font-weight-bold" style={{ cursor: "pointer" }}>
+          {snippet.title}
+        </h5>
         <p>{snippet.channelTitle}</p>
         <p className="small">
           {moment(snippet.publishedAt).startOf("day").fromNow()}
