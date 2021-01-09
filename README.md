@@ -1,3 +1,9 @@
+# Simple Youtube Clone
+
+# Application Url
+
+Link: https://simple-youtube-clone.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
