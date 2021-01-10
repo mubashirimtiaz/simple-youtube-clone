@@ -3,11 +3,12 @@ import moment from "moment";
 
 const VideoItem = ({ video, setSelectedVideo }) => {
   const { snippet } = video;
+  const handleClick = () => {
+    setSelectedVideo(video);
+    window.scrollTo(0, 0);
+  };
   return (
-    <li
-      className="media mb-2 d-block d-md-flex "
-      onClick={() => setSelectedVideo(video)}
-    >
+    <li className="media mb-2 d-block d-md-flex " onClick={handleClick}>
       <div className="d-flex">
         <img
           style={{ cursor: "pointer" }}
